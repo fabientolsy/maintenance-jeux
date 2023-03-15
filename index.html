@@ -18,6 +18,7 @@
             <div class="fs-4 text-center" style="margin-top: 4%; color: chartreuse;">
                 <p style="font-family: 'Times New Roman', Times, serif;">Dans ce jeux, vous avez un enemi, un adversaire pret a tout pour vous battre. </p>
                 <p style="font-family: 'Times New Roman', Times, serif;">Pour regner, soyez le premier a atteindre 60 points en lancant des dés</p>
+                <p style="font-family: 'Times New Roman', Times, serif;">Si vous tirez 1, vous pouvez rejouer</p>
             </div>
             <div style="position: relative; margin-top: 5%; color: chartreuse;">
                 <p class="fs-4 text-center"  style="font-family: 'Times New Roman', Times, serif;">Pour debuter ce duel, veuillez renseigner votre pseudonyme de vainqueur:</p>
@@ -28,8 +29,14 @@
     </form>
 
     <form id="formulaire-determiner-premier-joueur">
-        <fieldset style="margin-top: 25%;">
-            <legend style="margin-left: 44%;">Valeur du de</legend>
+        <p class="fs-1 text-center"  style="margin-top: 10%; font-weight: bold; font-family: 'Times New Roman', Times, serif">Jeux de dés(espoire)</p>
+
+        <div style="margin-top: 2%;">
+            <p class="fs-4 text-center" style="font-family: 'Times New Roman', Times, serif;">Pour determiner qui sera le premier a jouer, vous lancez un dé chacun.</p>
+            <p class="fs-4 text-center" style="font-family: 'Times New Roman', Times, serif;"> Le joueur avec la plus grosse valeur commence.</p>
+        </div>
+        <fieldset style="margin-top: 5%;">
+            <legend class="text-center">Valeur du de</legend>
             <input class="form-control text-center" type="text" id="valeur-tirage" value="" style="width: 3%; margin-left: 46%;" disabled/>
         </fieldset>
         <input class="btn btn-outline-warning" type="submit" value="Lancer" id="bouton-tirage" style="margin-top: 2%; margin-left: 45.8%;"/>

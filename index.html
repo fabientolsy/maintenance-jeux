@@ -30,28 +30,28 @@
     <form id="formulaire-determiner-premier-joueur">
         <fieldset>
             <legend>Valeur du de</legend>
-            <input type="text" id="valeur-tirage" value=""/>
+            <input class="form-control" type="text" id="valeur-tirage" value="" disabled/>
         </fieldset>
         <input type="submit" value="Lancer" id="bouton-tirage"/>
     </form>
 
     <form id="formulaire-jeu">
-		<fieldset>
+		<fieldset class="text-center">
 			<legend>Numero tour</legend>
-			<input type="text" id="champ-compteur-tour" value=""/>
+			<input class="form-control" type="text" id="champ-compteur-tour" value="" style="margin-left: 49%; width: 3%;" disabled/>
 		</fieldset>
         <fieldset>
-            <legend>Score</legend>
-            <input type="text" id="champ-score" value=""/>
+            <legend>Ton score</legend>
+            <input class="form-control" type="text" id="champ-score" value="" style="width: 3%;" disabled/>
         </fieldset>
-        <input type="submit" value="Lancer" id="bouton-lancer"/>
-        <input type="text" id="champ-valeur-des"/>
-
-        <fieldset >
-            <legend id="information-autre-joueur">Score {nom-autre-joueur}</legend>
-            <input type="text" id="champ-score-autre-joueur" value=""/>
-        </fieldset>
-		
+        <div style="margin-top: 3%; margin-left: 40%;">
+            <input type="submit" class="btn btn-outline-warning" value="Lancer" id="bouton-lancer"/>
+            <input type="text" id="champ-valeur-des" disabled/>
+        </div>
+        <div style="margin-top: -9%;">
+            <legend id="information-autre-joueur" style=" margin-left: 80%;" >Score de {nom-autre-joueur}</legend>
+            <input class="form-control" type="text" id="champ-score-autre-joueur" value=""  style="width: 3%;  margin-left: 80%;" disabled/>
+        </div>
     </form>
 
 </body>

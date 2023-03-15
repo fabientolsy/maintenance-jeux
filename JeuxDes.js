@@ -82,6 +82,7 @@ class De
   afficherTirageAuSort()
   {
     this.formulaireTirage.style.display = "block";
+    this.formulaireAuthentification.style.display = "none";
   }
 
   tirerDe()
